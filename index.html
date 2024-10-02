@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <ul class="sidebar">
+      <li id="close-icon"><a><img src="images/icon-close.svg" alt=""></a></li>
+      <li><a href="">Collections</a></li>
+      <li><a href="">Men</a></li>
+      <li><a href="">Women</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <ul class="menu">
+      <li class="mobile" id="menu-icon"><a><img src="images/icon-menu.svg" alt=""></a></li>
+      <li><a href=""><img src="images/logo.svg" alt=""></a></li>
+      <li class="desktop"><a href="">Collections</a></li>
+      <li class="desktop"><a href="">Men</a></li>
+      <li class="desktop"><a href="">Women</a></li>
+      <li class="desktop"><a href="">About</a></li>
+      <li class="desktop"><a href="">Contact</a></li>
+      
+      <div class="cart-icon-div">
+        <li>
+          <a class="cart-icon" style="cursor: pointer; position: relative;">
+            <img src="images/icon-cart.svg" alt="">
+            <h6 class="cart-quantity cart-pop-up" style="display: none; margin: 0;">0</h6>
+          </a>
+        </li>
+        <div class="cart" style="display: none;">
+          
+          <h3 style="margin-top: 0;">Cart</h3>
+          <hr style="color: hsl(219, 9%, 45%);">
+          
+          <div class="cart-filled" style="display: none;">
+            <div class="cart-items">
+              <img class="cart-thumbnail" style="cursor: auto;" src="images/image-product-1-thumbnail.jpg" alt="">
+              
+              <p>Fall Limited Edition Sneakers $<span class="product-price">0</span> x <span class="cart-quantity">0</span> 
+                <b>$<span class="cart-total-amount">0</span></b>
+              </p>
+              
+              <img id="delete-item" src="images/icon-delete.svg" alt="">
+            </div>
+            <button class="cart-checkout-btn">Checkout</button>
+          </div>
+
+          <div class="cart-empty">
+            <h5>Your cart is empty.</h5>
+          </div>
+
+        </div>
+      </div>
+      
+      <li><a href=""><img src="images/image-avatar.png" class="nav-avatar" alt=""></a></li>
+    </ul>
+  </nav>
+
+  <div class="product">
+    <div class="prod-img">
+      <div class="main-img-div">
+        <div class="prev"><img src="images/icon-previous.svg" alt=""></div>
+        <div class="next"><img src="images/icon-next.svg" alt=""></div>
+        <img class="main-img" src="images/image-product-1.jpg" alt="">      
+      </div>
+
+      <div class="thumbnail-img desktop">
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="prod-details">
+      <div class="prod-details-content">
+        <p style="font-weight: 600; color: hsl(219, 9%, 45%);">SNEAKER COMPANY</p>
+        <h1 style="color: hsl(220, 13%, 13%);">Fall Limited Edition Sneakers</h1>
+        <p style="color: hsl(219, 9%, 45%); font-weight: 400; font-size: 0.9rem;">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+      </div>
+      
+      <div class="prod-price">
+        <div class="prod-offer">
+          <h2 style="color: hsl(220, 13%, 13%);">$ <span class="item-price">125</span>.00</h2>
+          <p>50%</p>
+        </div>
+        <p style="text-decoration: line-through; color: hsl(219, 9%, 45%);"><b>$250.00</b></p>
+      </div>
+
+      <div class="prod-add-cart">
+        <div class="prod-add-btn">
+          <img id="minus" src="images/icon-minus.svg" alt="">
+          <span class="prod-quantity" style="font-weight: 700;">0</span>
+          <img id="plus" src="images/icon-plus.svg" alt="">
+        </div>
+
+        <button class="prod-cart-btn">
+          <img src="images/icon-cart.svg" alt="">
+          <b>Add to cart</b>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightBox">
+    <div class="prod-img">
+      <img class="lclose" src="images/icon-close.svg" alt="">
+      <div class="main-img-div">
+        <div class="lprev"><img src="images/icon-previous.svg" alt=""></div>
+        <div class="lnext"><img src="images/icon-next.svg" alt=""></div>
+        <img class="main-img" src="images/image-product-1.jpg" alt="">
+      
+      </div>
+      <div class="thumbnail-img desktop">
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="th-img"><img class="thumbnail-image" src="images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Java Script -->
+  <script src="scripts.js"></script> 
+</body>
+</html>
